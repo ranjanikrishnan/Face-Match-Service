@@ -1,0 +1,4 @@
+flask
+redis
+request
+boto3
