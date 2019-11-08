@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Face-matching-service</title>
+</head>
+<body>
+    <h1>Face Matching Service</h1>
+    <h2>Following are the available sample images :</h2>
+
+    {%for image, image_list in data.items()%}
+        <ul>
+            {%for image in image_list%}
+                <li>{{image}}</li>  
+            {% endfor %}
+        </ul>    
+    {% endfor %}
+    
+</body>
+</html>
